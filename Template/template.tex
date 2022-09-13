@@ -1,0 +1,99 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{titling}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{chngpage}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{chngcntr}
+\graphicspath{ {figs/} }
+\usepackage{indentfirst}
+\usepackage{relsize}
+\usepackage[margin=3.7cm]{geometry}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{hhline}
+\usepackage{titletoc}
+\usepackage{afterpage}
+\usepackage{hyperref, url}
+\usepackage{caption} 
+\usepackage{float}
+\usepackage{longtable}
+\captionsetup[table]{skip=10pt}
+
+\setlength{\droptitle}{-15em}
+
+\titleformat{\chapter}[display]
+{\normalfont\bfseries}{}{0pt}{\LARGE}
+\titleformat{\section}[display]
+{\normalfont\bfseries}{}{0pt}{\LARGE}
+\titleformat{\subsection}[display]
+{\normalfont\bfseries}{}{0pt}{\Large}
+\titleformat{\subsubsection}[display]
+{\normalfont\bfseries}{}{0pt}{\large}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{ASSIGNMENT TITLE}
+\fancyhead[R]{J. Ceballos and M. de Miguel}
+\fancyfoot[c]{\thepage}
+
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}%
+	\newpage}
+\newcommand\paren{
+	\left(
+}
+\newcommand\thesis{
+	\right)
+}
+
+\begin{document}
+	\begin{titlepage}
+		\centering
+		\vfill
+		\Large{COMPLUTENSE UNIVERSITY OF MADRID \\ \textbf{FACULTY OF PHYSICAL SCIENCES}}
+		\vfill
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[height=7cm]{cumphysics}
+		\end{figure}
+		\vfill 
+		\textbf{\Large{LABORATORY OF OPTICS:}}
+		\rule [5pt]{14cm}{2pt}\\
+		\LARGE{\textbf{ASSIGNMENT TITLE}} \\
+		\rule [8pt]{14cm}{2pt}\\
+		\vfill
+		\vfill
+		\vfill
+		\vfill
+		
+		\large{Fco. Javier Ceballos Arenas and Mario de Miguel Domínguez\\ Bachelor's Degree in Physics, 3\textsuperscript{rd} Year, Group O6\\ Experience date: AA\textsuperscript{th} of AAAA, 2022\\ Delivery date: AA\textsuperscript{th} of AAAA, 2022}
+		\vfill
+		\vfill
+		\vfill
+		\vfill
+		
+		\afterpage{\blankpage}
+	\end{titlepage}
+	
+	\makeatletter
+	\thispagestyle{empty}
+	\addtocounter{page}{-1}
+	\let\latexl@section\l@section
+	\def\l@section#1#2{\begingroup\let\numberline\@gobble\latexl@section{#1}{#2}\endgroup}
+	\let\latexl@subsection\l@subsection
+	\def\l@subsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsection{#1}{#2}\endgroup}
+	\let\latexl@subsubsection\l@subsubsection
+	\def\l@subsubsection#1#2{\begingroup\let\numberline\@gobble\latexl@subsubsection{#1}{#2}\endgroup}
+	\makeatother
+	\tableofcontents	
+	\thispagestyle{empty}
+	\afterpage{\blankpage}
+	\newpage
+\section{1 Do you think I have any chance with Faustarp?}
+\subsection{1.1 Please be honest}
+\end{document}
