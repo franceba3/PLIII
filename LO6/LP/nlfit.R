@@ -56,6 +56,6 @@ legend(
   x = "topleft", inset = .02,
   legend = c("Reflectivity", "Regression"),
   pch = c(16, NA),
-  lty = c(NA, 2),
+  lty = c(NA, 1),
   col = c("Black", "Green")
 )
