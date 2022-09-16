@@ -41,6 +41,10 @@ par(mfrow = c(1, 1), mar = c(4, 6, 2, 2))
 plot(data$t, data$r, xlab = expression(theta~(º)), ylab = expression(frac(R[perp]^2, A^2)), cex = 0.75, pch = 16)
 lines(u, ru, col="green")
 
+#Errorbars
+arrows(x0 = data$t - data$dt, y0 = data$r, x1 = data$t + data$dt, y1 = data$r, code = 3, angle = 90, length = 0.03, col = "black", lwd = 2)
+arrows(x0 = data$t, y0 = data$r - data$dr, x1 = data$t, y1 = data$r + data$dr, code = 3, angle = 90, length = 0.03, col = "black", lwd = 2)
+
 #Grid
 axis(1,
      at = seq(20, 80, by = 10),
@@ -59,3 +63,4 @@ legend(
   lty = c(NA, 1),
   col = c("Black", "Green")
 )
+
