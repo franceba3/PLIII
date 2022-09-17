@@ -15,8 +15,8 @@ fitdata <- data.frame(
 #Model <- r ~ (sin(s - asin(sin(s)/n)))^2/(sin(s + asin(sin(s)/n)))^2
 #Model <- r ~ a*(sin(s - asin(sin(s)/n)))^2/(sin(s + asin(sin(s)/n)))^2
 #Model <- r ~ a*(sin(s + d - asin(sin(s + d)/n)))^2/(sin(s + d + asin(sin(s + d)/n)))^2
-Model <- r ~ a*((cos(s + d) - sqrt(n^2 - (sin(s + d))^2))/(cos(s + d) + sqrt(n^2 - (sin(s + d))^2)))^2
-ig <- c(n = 1.5, a = 1, d = 0)
+Model <- r ~ ((cos(s) - sqrt(n^2 - (sin(s))^2))/(cos(s) + sqrt(n^2 - (sin(s))^2)))^2
+ig <- c(n = 1.5)
 
 
 Fit <- gsl_nls(
@@ -31,12 +31,12 @@ summary(Fit)
 
 ## Park sex
 u <- seq(from = 15, to = 85, by = 0.2)
-eval <- function(x, a, d, n) {
+eval <- function(x, n) {
   y = pi*x/180
-  return(a*((cos(y + d) - sqrt(n^2 - (sin(y + d))^2))/(cos(y + d) + sqrt(n^2 - (sin(y + d))^2)))^2)
+  return(((cos(y) - sqrt(n^2 - (sin(y))^2))/(cos(y) + sqrt(n^2 - (sin(y))^2)))^2)
 }
 
-ru <- eval(u, 0.80879, 0.00222, 1.47835)
+ru <- eval(u, 1.49935)
 
 par(mfrow = c(1, 1), mar = c(4, 6, 2, 2))
 
