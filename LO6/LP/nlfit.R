@@ -3,6 +3,9 @@ rm(list = ls(all.names = TRUE)) #Clear all()
 library(readxl)
 library(NISTnls)
 library(gslnls)
+#library(devtools)
+#library(nlcor)
+
 data <- readxl::read_excel("Desktop/Physics/Physics Lab III/LO6/LP/data.xlsx", 
                    sheet = "Sheet2")
 
@@ -60,9 +63,12 @@ box()
 
 legend(
   x = "topleft", inset = .02,
-  legend = c("Reflectivity", "Regression"),
-  pch = c(16, NA),
-  lty = c(NA, 1),
-  col = c("Black", "Green")
+  legend = c("Reflectivity"),
+  pch = 16,
+  col = c("Black"),
+  #legend = c("Reflectivity", "Regression"),
+  #pch = c(16, NA),
+  #lty = c(NA, 1),
+  #col = c("Black", "Green")
 )
 
