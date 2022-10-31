@@ -5,9 +5,10 @@ data <- readxl::read_excel("Desktop/Physics/Physics Lab III/LO6/DF/data.xlsx",
                            sheet = "Sheet2")
 
 linear <- lm(r ~ m, data = data)
+
 summary(linear)
 
-plot(data$m, data$r * 1e6,  cex = 0.5, pch = 16, ylab = expression(Delta*x (mu*m)), xlab = "m")
+plot(data$m, data$r * 1e6,  cex = 0.5, pch = 16, ylab = expression(r (mu*m)), xlab = "m")
 arrows(y0 = (data$r - data$dr) * 1e6, x0 = data$m, y1 = (data$r + data$dr) * 1e6, x1 = data$m, code = 3, angle = 90, length = 0.03, col = "black", lwd = 1)
 
 linear$coefficients[c("m")] <- linear$coefficients[c("m")] * 1e6
