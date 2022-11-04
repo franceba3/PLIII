@@ -1,0 +1,2 @@
+entrada[kHz]	máximo[kHz]	salida[kHz]	altura[V]	área[VkHz]
+0,938	0,996	1,055	4,31	0,09017
