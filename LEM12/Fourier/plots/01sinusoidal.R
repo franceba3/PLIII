@@ -14,7 +14,7 @@ df2 <- read.table("/Users/erwinplanck/Desktop/Physics/Physics Lab III/LEM12/Four
                   header = FALSE, sep = "\t", dec = ",")
 
 #dfapprox <- splinefun(df$V1, df$V2)
-dfapprox2 <- approxfun(df2$V1, df2$V2, method = "constant")
+#dfapprox2 <- approxfun(df2$V1, df2$V2, method = "constant")
 swave <- V2 ~ A*sin(2*pi/T*V1)
 
 dfapprox <- gsl_nls(
@@ -36,29 +36,30 @@ dev.new()
 
 par(bg = "#f7f7f7", mfrow = c(2,1)) #Fondo gris claro para la gráfica + subplots 2 filas 1 columna
 
-plot(df$V1, df$V2, pch = 16, cex = .5, xlab = "t (ms)", ylab = "U (V)")
+plot(df$V1, df$V2, pch = 16, cex = 0, xlab = "t (ms)", ylab = "U (V)")
 #curve(dfapprox, add = TRUE, col = "red")
 title("Onda sinusoidal")
-lines(t, rt, col = "red")
-grid(NULL, NULL, lty = 3, col = "lightgray")
+lines(t, rt, col = "blue")
+grid(NULL, NULL, lty = 3, col = "darkblue")
 box()
-legend(
-  x = "topright", inset = .02,
-  legend = c("Puntos medidos", "Interpolación"),
-  pch = c(16, NA),
-  lty = c(NA, 1),
-  col = c("Black", "Red")
-)
+#legend(
+#  x = "topright", inset = .02,
+#  legend = c("Puntos medidos", "Interpolación"),
+#  pch = c(16, NA),
+#  lty = c(NA, 1),
+#  col = c("Black", "Red")
+#)
 
-plot(df2$V1, df2$V2, pch = 16, cex = .5, xlab ="f (kHz)", ylab = "U (V)")
+plot(df2$V1, df2$V2, pch = 16, cex = 0, xlab ="f (kHz)", ylab = "U (V)")
 title("Espectro de frecuencias")
 grid(NULL, NULL, lty = 3, col = "lightgray")
-curve(dfapprox2, add = TRUE, col = "green")
+#curve(dfapprox2, add = TRUE, col = "green")
+lines(df2$V1, df2$V2, col = "darkblue")
 box()
-legend(
-  x = "topright", inset = .02,
-  legend = c("Puntos medidos", "Interpolación"),
-  pch = c(16, NA),
-  lty = c(NA, 1),
-  col = c("Black", "Green")
-)
+#legend(
+#  x = "topright", inset = .02,
+#  legend = c("Puntos medidos", "Interpolación"),
+#  pch = c(16, NA),
+#  lty = c(NA, 1),
+#  col = c("Black", "Green")
+#)
