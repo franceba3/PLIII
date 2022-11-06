@@ -25,9 +25,9 @@ box()
 #)
 
 plot(df2$V1, df2$V2, pch = 16, cex = 0, xlab ="f (kHz)", ylab = "U (V)")
-lines(df2$V1, df2$V2, col = "darkblue")
 title("Espectro de frecuencias")
 grid(NULL, NULL, lty = 3, col = "lightgray")
+lines(df2$V1, df2$V2, col = "darkblue")
 box()
 #legend(
 #  x = "topright", inset = .02,
