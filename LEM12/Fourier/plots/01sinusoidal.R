@@ -40,7 +40,7 @@ plot(df$V1, df$V2, xlim = c(0, tail(df$V1, 1)), pch = 16, cex = 0, xlab = "t (ms
 #curve(dfapprox, add = TRUE, col = "red")
 title("Onda sinusoidal")
 lines(t, rt, col = "darkblue")
-grid(NULL, NULL, lty = 3, col = "darkblue")
+grid(NULL, NULL, lty = 3, col = "lightgray")
 box()
 #legend(
 #  x = "topright", inset = .02,
