@@ -9,6 +9,7 @@ fm26 <- data.frame(
 
 l26 <- lm(f ~ m, data = fm26)
 k26 <- summary(l26)$coefficients[2,1]
+summary(l26)
 print(0.5*c/k26)
 #plot(fm$m, fm$f)
 
