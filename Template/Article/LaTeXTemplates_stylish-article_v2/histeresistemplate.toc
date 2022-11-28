@@ -2,15 +2,16 @@
 \contentsline {section}{Introduction}{1}{Doc-Start}%
 \contentsline {section}{\numberline {1}Método experimental}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Subsection}{1}{subsection.1.1}%
-\contentsline {paragraph}{Paragraph}{1}{paragraph*.2}%
+\contentsline {paragraph}{Paragraph}{2}{paragraph*.2}%
 \contentsline {paragraph}{Paragraph}{2}{paragraph*.3}%
 \contentsline {subsection}{\numberline {1.2}Subsection}{2}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Results and Discussion}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Subsection}{3}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Subsubsection}{3}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Subsubsection}{3}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.3}Subsubsection}{3}{subsubsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.2}Subsection}{3}{subsection.2.2}%
-\contentsline {section}{Acknowledgments}{4}{section*.6}%
-\contentsline {section}{Referencias}{4}{section*.7}%
+\contentsline {section}{\numberline {2}Resultados y análisis}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Ciclo de histéresis del núcleo de hierro macizo}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Campo coercitivo e imanación remanente}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Estudio de la susceptibilidad magnética}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Permeabilidad relativa del hierro}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Pérdidas de energía}{5}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Estudio de los ciclos menores}{5}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Conclusiones}{6}{section.3}%
+\contentsline {section}{Referencias}{6}{section*.14}%
 \contentsfinish 
